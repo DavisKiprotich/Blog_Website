@@ -1,5 +1,7 @@
 import Head from "next/head";
-import { PostCard, PostWidget, Categories } from "../../components";
+import { PostCard, PostWidget, Categories, CardList } from "../../components";
+import Featured from "../../components/Featured";
+import Menu from "../../components/Menu";
 
 const articles = [
   { title: "React Testing", author: "Linnric" },
@@ -25,7 +27,12 @@ export default function Home() {
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
             <PostWidget />
+            <Featured />
             <Categories />
+            <div className="">
+              <Menu />
+              <CardList />
+            </div>
           </div>
         </div>
       </div>

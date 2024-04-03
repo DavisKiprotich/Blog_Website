@@ -2,12 +2,20 @@ import React, {useContext} from 'react'
 
 import Link from 'next/link'
 
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+
 const categories = [{name: 'Meditation', slug: 'meditation'}, {name: 'Prayer', slug: 'prayer'}]
 
 const Header = () => {
   return (
-    <div className='container mx-auto px-10 mb-8'>
-      <div className='border-b w-full inline-block border-blue-400 py-8'>
+    <div className='container mx-auto px-10 mb-8 mt-10 '>
+      <div className='border-b w-full border-blue-400 py-8 mt-10 flex justify-between items-center'>
+        <div className='flex items-center'>
+          <FaInstagram className='w-6 h-6 mr-2 text-blue' />
+          <FaFacebook className='w-6 h-6 mr-10' />
+          <FaTwitter className='w-6 h-6 mr-10' />
+          <FaLinkedin className='w-6 h-6' />
+        </div>
         <div className='md:float-left block'>
           <Link href='/'>
             <span className='cursor-pointer font-bold text-3xl text-white'>
