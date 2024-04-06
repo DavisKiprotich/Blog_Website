@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from './styles/themeToggler.module.css';
 
 const ThemeToggler = () => {
   return (
-    <div>ThemeToggler</div>
+    <div className={styles.container}>ThemeToggler</div>
   )
 }
 

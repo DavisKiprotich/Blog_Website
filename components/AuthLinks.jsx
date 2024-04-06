@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from './styles/authLinks.module.css'
 
 const AuthLinks = () => {
   return (
-    <div>AuthLinks</div>
+    <div className={styles.container}>AuthLinks</div>
   )
 }
 
