@@ -11,13 +11,14 @@ const categories = [{name: 'Meditation', slug: 'meditation'}, {name: 'Prayer', s
 
 const Header = () => {
   return (
-    <div className='h-16 flex items-center justify-between px-10 bg-gray-800 text-white'>
+    <div className='container h-16 flex items-center justify-between mx-auto px-10 mb-8'>
         <div className='flex gap-10 ml-4'>
           <FaInstagram className='w-6 h-6 text-blue' />
           <FaFacebook className='w-6 h-6' />
           <FaTwitter className='w-6 h-6' />
           <FaLinkedin className='w-6 h-6' />
         </div>
+
         <div className='text-3xl font-bold'>
           <Link href='/'>
             <span className='cursor-pointer font-bold text-3xl text-white'>
@@ -25,8 +26,8 @@ const Header = () => {
             </span>
           </Link>
         </div>
-        <div className='flex gap-15 ml-auto mr-4'>
 
+        <div className='flex gap-15 ml-auto mr-4'>
           <ThemeToggler />
 
           {categories.map((category, index) => (
@@ -37,9 +38,7 @@ const Header = () => {
             </Link>
           ))}
 
-
-          <AuthLinks />
-          
+          <AuthLinks />          
         </div>
     </div>
   )
