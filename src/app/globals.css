@@ -5,6 +5,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
+
+:root{
+  --bg: white;
+  --textcolor: black;
+  --softBg: #f0f0f0;
+  --softTextColor: #626262;
+}
 html,
 body {
   padding: 0;
@@ -26,6 +33,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+.dark{
+  --bg: #0f172a;
+  --textcolor: #ddd;
+  --softBg: #1f273a;
+  --softTextColor: #a6a6a6;
 }
 
 .text-shadow{
@@ -61,5 +75,7 @@ a {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
