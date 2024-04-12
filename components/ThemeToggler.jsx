@@ -9,12 +9,12 @@ import { ThemeContext } from '@/context/ThemeContext';
 
 const ThemeToggler = () => {
 
-  const {theme} = useContext(ThemeContext)
+  const {toggle, theme} = useContext(ThemeContext)
   console.log(theme)
 
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onClick={toggle}>
       <FiMoon className='w-14px h-14px fill-blue-500' />
       <div className={styles.ball}></div>
       <MdOutlineWbSunny className='w-14px h-14px fill-#ffc400-500' />
