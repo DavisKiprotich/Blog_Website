@@ -4,6 +4,7 @@ import AuthLinks from './AuthLinks';
 import { ThemeToggler } from '.';
 
 import Link from 'next/link'
+import styles from './styles/header.module.css'
 
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
@@ -11,15 +12,15 @@ const categories = [{name: 'Meditation', slug: 'meditation'}, {name: 'Prayer', s
 
 const Header = () => {
   return (
-    <div className='container h-16 flex items-center justify-between mx-auto px-10 mb-8'>
-        <div className='flex gap-10 ml-4'>
+    <div className={styles.container}>
+        <div className={styles.social}>
           <FaInstagram className='w-6 h-6 text-blue' />
           <FaFacebook className='w-6 h-6' />
           <FaTwitter className='w-6 h-6' />
           <FaLinkedin className='w-6 h-6' />
         </div>
 
-        <div className='text-3xl flex-1 font-bold'>
+        <div className={styles.logo}>
           <Link href='/'>
             <span className='cursor-pointer text-center font-bold text-3xl text-white'>
               GraphCMS
@@ -27,7 +28,7 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className='flex space-x-4 gap-15 mr-4'>
+        <div className={styles.links}>
           <ThemeToggler />
 
           {categories.map((category, index) => (
