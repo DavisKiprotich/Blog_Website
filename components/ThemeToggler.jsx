@@ -16,7 +16,11 @@ const ThemeToggler = () => {
   return (
     <div className={styles.container} onClick={toggle}>
       <FiMoon className='w-14px h-14px fill-blue-500' />
-      <div className={styles.ball}></div>
+      <div className={styles.ball} style={
+        theme === 'dark'
+        ? { backgroundColor: '#fff' }
+        : { backgroundColor: '#0f172a'}
+        }></div>
       <MdOutlineWbSunny className='w-14px h-14px fill-#ffc400-500' />
     </div>
   )

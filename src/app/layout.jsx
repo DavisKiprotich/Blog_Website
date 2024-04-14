@@ -19,9 +19,9 @@ export default function RootLayout({ children }) {
           <ThemeProvider>
             <div className="container">
               <div className="wrapper">
-              <Header />
-              {children}
-              <Footer />
+                <Header />
+                {children}
+                <Footer />
               </div>
             </div>
           </ThemeProvider>
