@@ -2,6 +2,7 @@ import Head from "next/head";
 import { PostCard, PostWidget, Categories, CardList } from "../../components";
 import Featured from "../../components/Featured";
 import Menu from "../../components/Menu";
+import styles from "../../components/styles/homepage.module.css";
 
 const articles = [
   { title: "React Testing", author: "Linnric" },
@@ -10,7 +11,7 @@ const articles = [
 
 export default function Home() {
   return (
-    <main className="container flex min-h-screen flex-col items-center justify-between px-24 mx-auto mb-8 ">
+    <main className={styles.container}>
       <Head>
         <p>
           Create Our Blog Website Using NextJs and TailwindCSS
