@@ -32,7 +32,7 @@ const Header = () => {
           <ThemeToggler />
 
           {categories.map((category, index) => (
-            <Link key={category.slug} href={`/category/${category.slug}`}>
+            <Link key={category.slug} href={`/category/${category.slug}`} className={styles.link}>
               <span className={`md:float-right mr-2 align-middle ml-4 font-semibold cursor-pointer ${index !== categories.length - 1 ? 'mr-8' : ''}`}>
                 {category.name}
               </span>
