@@ -9,7 +9,7 @@ const AuthLinks = () => {
 
   // temporary
   const status = 'notauthenticated'
-  
+   
   return (
     <>
       {status === 'notauthenticated' ?
