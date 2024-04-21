@@ -9,7 +9,8 @@ const articles = [
   { title: "React Testing with Tailwind", author: "Paul" },
 ];
 
-export default function Home() {
+export default function Home({ searchParams }) {
+  const page = parseInt(searchParams.page) || 1;
   return (
     <main className={styles.container}>
       <Head>
@@ -18,7 +19,7 @@ export default function Home() {
         </p>
       </Head>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      {/* <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
           {articles.map((article, index) => (
             <PostCard article= {article} key={article.title} />
@@ -36,7 +37,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+
+      </div> */}
+
+      <Featured />
+      <Categories />
+
+    <div className={styles.content}>
+      <CardList  page={page} />
+      <Menu />
+    </div>
 
     </main>
   );
