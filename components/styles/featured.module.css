@@ -3,12 +3,12 @@
   }
   
   .title {
-    font-size: 96px;
-    font-weight: 300;
+    font-size: 50px;
+    font-weight: 500;
   }
   
   .post {
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     gap: 50px;
