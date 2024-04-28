@@ -7,21 +7,22 @@ const Card = () => {
     <div className={styles.container}>
         <div className={styles.imageContainer}>
             <Image 
-            src='/60.jpg' alt='' fill
+            src='/60.jpg' alt='' fill className={styles.image}
             />
           </div>
           <div className={styles.textContainer}>
             <div className={styles.detail}>
-                <div className={styles.date}>11.04.2024</div>
-                <div className={styles.category}>CATEGORY</div>
+                <span className={styles.date}>11.04.2024  -  </span>
+                <span className={styles.category}>CATEGORY</span>
             </div>
             <Link href='/'>
                 <h1>ihashjksdhklhs\lhklbhkflhbflkshbklhsfklbhl</h1>
             </Link>
-            <p>
-                agyuafguiDG|czj bs\IOhqyTOGIsMCNVFB\DuihEASJcvb jkz\ghSIOelSCBDJKGHSEWIOLDFBV
+            <p className={styles.desc}>
+                agyuafguiDG|czj bs\IOhqyTOGIsMCNVFB\DuihEASJcvb 
+                jkz\ghSIOelSCBDJKGHSEWIOLDFBV
             </p>
-            <Link href='/'>Read More</Link>
+            <Link href='/' className={styles.link}>Read More</Link>
           </div>
     </div>
   )
