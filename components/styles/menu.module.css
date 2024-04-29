@@ -34,6 +34,28 @@
     flex-direction: column;
     gap: 5px;
 }
+
+.category{
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    width: max-content;
+}
+
+.category.travel{
+    background-color: rgb(226, 80, 43);
+
+}
+.category.meditate{
+    background-color: rgb(73, 226, 43);
+
+}
+.category.exercise{
+    background-color: rgb(43, 76, 226);
+
+}
+
 .postTitle{
     font-size: 18px;
     color: var(--softTextColor);
