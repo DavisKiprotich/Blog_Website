@@ -9,11 +9,15 @@
 }
 
 .title{
-    
+   font-size: 28px; 
 }
 
 .items{
-
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 35px;
+    margin-bottom: 58px;
 }
 
 .item{
@@ -53,6 +57,10 @@
 }
 .category.exercise{
     background-color: rgb(43, 76, 226);
+
+}
+.category.pray{
+    background-color: rgb(226, 43, 217);
 
 }
 
