@@ -1,0 +1,30 @@
+.categoryList{
+    margin-top: 35px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.categoryItem{
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.categoryItem.travel{
+    background-color: rgb(212, 140, 122);
+
+}
+.categoryItem.meditate{
+    background-color: rgb(134, 226, 116);
+
+}
+.categoryItem.exercise{
+    background-color: rgb(70, 100, 231);
+
+}
+.categoryItem.pray{
+    background-color: rgb(230, 102, 223);
+
+}

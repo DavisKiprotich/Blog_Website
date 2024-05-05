@@ -16,47 +16,47 @@ const Categories = () => {
         width={32}
         height={32}
         />
-        style
+        Style
         </Link>
-        <Link href='/blog?cat=style' className={`${styles.category} ${styles.style}`}>
+        <Link href='/blog?cat=style' className={`${styles.category} ${styles.pray}`}>
         <Image 
-        src='/47.jpg'
+        src='/earth.jpg'
         alt=''
         className={styles.image}
         width={32}
         height={32}
         />
-        style
+        Pray
         </Link>
-        <Link href='/blog?cat=style' className={`${styles.category} ${styles.style}`}>
+        <Link href='/blog?cat=style' className={`${styles.category} ${styles.travel}`}>
         <Image 
-        src='/47.jpg'
+        src='/extreme-sports.jpg'
         alt=''
         className={styles.image}
         width={32}
         height={32}
         />
-        style
+        Travel
         </Link>
-        <Link href='/blog?cat=style' className={`${styles.category} ${styles.style}`}>
+        <Link href='/blog?cat=style' className={`${styles.category} ${styles.meditate}`}>
         <Image 
-        src='/47.jpg'
+        src='/beach.jpg'
         alt=''
         className={styles.image}
         width={32}
         height={32}
         />
-        style
+        Meditate
         </Link>
-        <Link href='/blog?cat=style' className={`${styles.category} ${styles.style}`}>
+        <Link href='/blog?cat=style' className={`${styles.category} ${styles.exercise}`}>
         <Image 
-        src='/47.jpg'
+        src='/war.jpg'
         alt=''
         className={styles.image}
         width={32}
         height={32}
         />
-        style
+        Exercise
         </Link>
       </div>  
     </div>
