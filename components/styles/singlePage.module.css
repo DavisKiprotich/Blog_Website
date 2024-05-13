@@ -28,6 +28,36 @@
     position: relative;
 }
 
+.avatar{
+    border-radius: 50%;
+}
+
+.userTextContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: var(--softTextCColor);
+}
+
+.userName{
+    font-size: 23px;
+    font-weight: 500;
+}
+
 .image{
     object-fit: cover;
+}
+
+.content{
+    display: flex;
+    gap: 50px;
+}
+.post{
+    flex: 5;
+}
+
+.description{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
