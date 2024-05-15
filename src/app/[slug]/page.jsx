@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import Menu from '../../../components/Menu'
 import styles from '../../../components/styles/singlePage.module.css'
+import Comments from '../../../components/Comments'
 
 const SinglePage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
         <div className={styles.textContainer}>
-          <h1 className={styles.title}>jhuagsj\zbmjzvbjkasbxmvbz</h1>
+          <h1 className={styles.title}>We are buliding this project together even though it looks tiresome!</h1>
           <div className={styles.user}>
               <div className={styles.userImageContainer}>
                 <Image src='/47.jpg' alt="" fill className={styles.avatar} />
@@ -27,9 +28,9 @@ const SinglePage = () => {
           <div
             className={styles.description}
           />
-          {/* <div className={styles.comment}>
-            <Comments postSlug={slug}/>
-          </div> */}
+          <div className={styles.comment}>
+            <Comments />
+          </div>
         </div>
         <Menu />
       </div>
