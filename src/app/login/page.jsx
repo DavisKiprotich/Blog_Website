@@ -1,4 +1,4 @@
-import styles from '../../'
+import styles from '../../../components/styles/loginPage.module.css'
 
 const LoginPage = () => {
   return (
@@ -7,6 +7,7 @@ const LoginPage = () => {
             <div className={styles.socialButton}>Sign in with Google</div>
             <div className={styles.socialButton}>Sign in with Instagram</div>
             <div className={styles.socialButton}>Sign in with X</div>
+            <div className={styles.socialButton}>Sign in with Github</div>
             <div className={styles.socialButton}>Sign in with Facebook</div>
         </div>
     </div>
