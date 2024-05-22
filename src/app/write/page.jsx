@@ -12,9 +12,9 @@ const WritePage = () => {
 
   return (
     <div className={styles.container}>
-      <input type="text" placeholder="Title" />
+      <input type="text" placeholder="Title" className={styles.input} />
       <div className={styles.editor}>
-        <button className={styles.button}>
+        <button className={styles.button} onClick={() => setOpen(!open)}>
           <Image src="/plus.png" alt="" width={16} height={16} />
         </button>
         {open && (
@@ -30,9 +30,10 @@ const WritePage = () => {
             </button>
           </div>
         )}
-        <ReactQuill theme="bubble" placeholder="Write your story..." value={value} onChange={setValue}/>
+        <ReactQuill className={styles.textArea} theme="bubble" placeholder="Write your story..." value={value} onChange={setValue}/>
 
       </div>
+      <button className={styles.publish}>Publish</button>
     </div>
   );
 };
