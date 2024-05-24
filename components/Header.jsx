@@ -22,8 +22,8 @@ const Header = () => {
 
         <div className={styles.logo}>
           <Link href='/'>
-            <span className='cursor-pointer text-center font-bold text-3xl text-white'>
-              GraphCMS
+            <span className={styles.logo}>
+              Murerwa
             </span>
           </Link>
         </div>
@@ -34,7 +34,6 @@ const Header = () => {
           <Link href="/" className={styles.link}>Homepage</Link>
           <Link href="/" className={styles.link}>Contact</Link>
           <Link href="/" className={styles.link}>About</Link>
-
           <AuthLinks />          
         </div>
     </div>

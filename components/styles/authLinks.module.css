@@ -1,23 +1,24 @@
-.link{
-    cursor: pointer;
-}
 
-.burger{
+.link {
+    cursor: pointer;
+  }
+  
+  .burger {
     width: 20px;
     height: 16px;
-    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
     display: none;
-}
-.line{
+  }
+  
+  .line {
     width: 100%;
     height: 2px;
     background-color: var(--textColor);
-}
-
-.responsiveMenu{
+  }
+  
+  .responsiveMenu{
     position: absolute;
     top: 100px;
     left: 0;
@@ -26,17 +27,20 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 40px;
-    font-size: 25px;
-}
-
-@media screen and (max-width: 640px) {
-    .burger{
-        display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 36px;
+    z-index: 999;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .burger {
+      display: flex;
     }
+  
     .link{
-        display: none;
+      display: none;
     }
-}
+  }
+  

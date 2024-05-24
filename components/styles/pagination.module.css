@@ -6,8 +6,10 @@
 .button{
     width: 100px;
     border: none;
-    padding: 17px;
-    background-color: rgb(25, 23, 160);
+    padding: 12px;
+    background-color: rgb(31, 113, 207);
     color: white;
     cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
 }
