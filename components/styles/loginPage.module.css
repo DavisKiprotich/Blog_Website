@@ -20,6 +20,7 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
 }
 
 .socialButton:first-child{
