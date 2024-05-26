@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Categories = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Find your favorite</h1>
+      <h1 className={styles.title}>Popular Categories</h1>
       <div className={styles.categories}>
         <Link href='/blog?cat=style' className={`${styles.category} ${styles.style}`}>
         <Image 
