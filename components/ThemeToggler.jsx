@@ -10,7 +10,7 @@ import { ThemeContext } from '@/context/ThemeContext';
 const ThemeToggler = () => {
 
   const {toggle, theme} = useContext(ThemeContext)
-  console.log(theme)
+
 
 
   return (
