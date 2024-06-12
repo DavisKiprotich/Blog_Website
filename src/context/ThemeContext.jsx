@@ -10,7 +10,7 @@ const getFromLocalStorage = () => {
     const value = localStorage.getItem("theme");
     return value || "light";
   }
-  return 'light'
+  return 'light' // This should be removed
 };
 
 export const ThemeContextProvider = ({ children }) => {
