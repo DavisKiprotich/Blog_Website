@@ -9,15 +9,15 @@ const LoginPage = () => {
 
   const {data, status} = useSession()
 
-  // const router = useRouter()
+  const router = useRouter()
 
   if(status === 'loading'){
     return <div className={styles.loading}>Loading....</div>
   }
 
-  // if(status === 'authenticated'){
-  //   router.push('/')
-  // }
+  if(status === 'authenticated'){
+    router.push('/')
+  }
 
   return (
     <div className={styles.container}>

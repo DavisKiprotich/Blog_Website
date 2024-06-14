@@ -24,23 +24,22 @@
 }
 
 .socialButton:first-child{
-    background-color: #ff5555;
-}
-
-.socialButton:nth-child(2){
     background-color: #007bff;
 }
 
+.socialButton:nth-child(2){
+    background-color: #111;
+}
 .socialButton:nth-child(3){
-    background-color: #28a745;
+    background-color: #a7286e;
 }
 
 .socialButton:nth-child(4){
-    background-color: #111;
+    background-color: #ff5555;
 }
 
 .socialButton:nth-child(5){
-    background-color: #17a2b8;
+    background-color: rgb(9, 156, 95);
 }
 
 @media screen and (max-width: 768px) {
