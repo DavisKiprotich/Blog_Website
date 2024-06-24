@@ -11,15 +11,14 @@ export const GET = async(req) => {
         const posts = await prisma.post.findMany(
             {
                 take: POST_PER_PAGE,
-                skip: (page - 1) * POST_PER_PAGE,
-                orderBy: { createdAt: "desc" },
-                include: {
-                    author: true,
-                    category: true,
-                },
+                skip: POST_PER_PAGE * (page - 1),
+                // orderBy: { createdAt: "desc" },
+                // include: {
+                //     author: true,
+                //     category: true,
+                // },
             }
-        )
-        
+        )        
         return new NextResponse(
             JSON.stringify(posts, { status:200 })
         );

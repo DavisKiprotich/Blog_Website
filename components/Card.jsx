@@ -16,7 +16,7 @@ const Card = ({ key,item }) => {
                 <span className={styles.category}>CATEGORY</span>
             </div>
             <Link href='/'>
-                <h1>{item.title}</h1>
+                <h1>{item.title}</h1> 
             </Link>
             <p className={styles.desc}>
                 agyuafguiDG|czj bs\IOhqyTOGIsMCNVFB\DuihEASJcvb 

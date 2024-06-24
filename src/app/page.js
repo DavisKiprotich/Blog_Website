@@ -12,7 +12,7 @@ const articles = [
 export default function Home({ searchParams }) {
   const page = parseInt(searchParams.page) || 1;
   return (
-    <main className={styles.container}>
+    <div className={styles.container}>
       <Head>
         <p>
           Create Our Blog Website Using NextJs and TailwindCSS
@@ -26,6 +26,6 @@ export default function Home({ searchParams }) {
       <Menu />
     </div>
 
-    </main>
+    </div>
   );
 }

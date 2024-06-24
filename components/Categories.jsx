@@ -35,7 +35,7 @@ const Categories = async() => {
           width={32}
           height={32}
           />)}
-          {item.link}
+          {item.title}
           </Link>
         ))}
           
