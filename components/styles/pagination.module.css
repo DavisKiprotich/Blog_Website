@@ -13,3 +13,8 @@
     border-radius: 20px;
     text-align: center;
 }
+
+.button:disabled{
+    background-color: rgb(28, 28, 175);
+    cursor: not-allowed;
+}
