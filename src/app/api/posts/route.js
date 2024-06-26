@@ -5,18 +5,12 @@ export const GET = async(req) => {
 
     const {searchParams} = new URL(req.url);
     const page = searchParams.get("page");
-
     
     const POST_PER_PAGE = 2;
 
     const query = {
         take: POST_PER_PAGE,
-        skip: POST_PER_PAGE * (page - 1),
-        orderBy: { createdAt: "desc" },
-        include: {
-            user: true,
-            category: true,
-        },                      
+        skip: POST_PER_PAGE * (page - 1),                   
     };
 
     try {        
