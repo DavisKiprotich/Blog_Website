@@ -19,6 +19,8 @@ const SinglePage = async ({ params }) => {
   const slug = params;
 
   const data = await getData(slug);
+  const username = data?.user?.name || 'Unknown User';
+  const date = data?.date || '01.01.2024';
 
   return (
     <div className={styles.container}>
@@ -32,8 +34,10 @@ const SinglePage = async ({ params }) => {
               </div>
             )}
             <div className={styles.userTextContainer}>
-              <span className={styles.username}>{data?.user.name}</span>
-              <span className={styles.date}>01.01.2024</span>
+
+              // testing for username because i have not filled the details in db
+              <span className={styles.username}>{username}</span>
+              <span className={styles.date}>{date}</span>
             </div>
           </div>
         </div>
@@ -47,7 +51,7 @@ const SinglePage = async ({ params }) => {
         <div className={styles.post}>
           <div
             className={styles.description}
-            dangerouslySetInnerHTML={{ __html: data?.desc }}
+            // dangerouslySetInnerHTML={{ __html: data?.desc }}
           />
           <div className={styles.comment}>
             <Comments postSlug={slug}/>
