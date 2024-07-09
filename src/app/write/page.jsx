@@ -13,6 +13,8 @@ const WritePage = () => {
 
   const router = useRouter()
 
+
+  const [file, setFile] = useState(null);
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState('');
   
