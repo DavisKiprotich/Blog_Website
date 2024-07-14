@@ -77,6 +77,7 @@ const WritePage = () => {
       .replace(/[\s_-]+/g, "-")
       .replace(/^-+|-+$/g, "");
 
+
   const handleSubmit = async () => {
     const res = await fetch("/api/posts", {
       method: "POST",
@@ -88,6 +89,7 @@ const WritePage = () => {
         catSlug: catSlug || "style", //If not selected, choose the general category
       }),
     })
+    console.log(res)
   };
 
   return (

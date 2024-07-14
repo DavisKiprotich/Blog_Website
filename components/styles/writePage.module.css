@@ -14,6 +14,7 @@
     font-size: 40px;
     border: none;
     outline: none;
+    color: var(--textColor);
 }
 
 .input::placeholder{
