@@ -15,7 +15,7 @@ import {
 } from "firebase/storage";
 import { app } from "@/utilities/firebase";
 
-const WritePage = () => {
+const page = () => {
   const { status } = useSession();
   const router = useRouter();
 
@@ -146,4 +146,4 @@ const WritePage = () => {
   );
 };
 
-export default WritePage;
+export default page;
