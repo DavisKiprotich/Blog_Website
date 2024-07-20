@@ -31,7 +31,7 @@ export const GET = async (req) => {
 // CREATE A COMMENT
 
 export const POST = async (req) => {
-  const session = await getAuthSession()
+  const session = await getAuthSession();
   if (!session) {
     return new NextResponse(
       JSON.stringify({ message: "You must be logged in to create a comment." }, { status: 401 })

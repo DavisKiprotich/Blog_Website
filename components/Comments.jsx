@@ -5,6 +5,7 @@ import styles from "./styles/comments.module.css";
 import Link from "next/link";
 import useSWR from "swr";
 import { useSession } from "next-auth/react";
+import { useState } from "react";
 
 const fetcher = async (url) => {
   const res = await fetch(url);
@@ -48,7 +49,7 @@ const Comments = ({ postSlug }) => {
           <textarea
             placeholder="write a comment..."
             className={styles.input}
-            onChange={(e = setDesc(e.target.value))}
+            onChange={(e) => setDesc(e.target.value)}
           />
           <button className={styles.button} onclick={handleSubmit}>Send</button>
         </div>
