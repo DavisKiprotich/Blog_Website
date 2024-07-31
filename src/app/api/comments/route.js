@@ -7,7 +7,6 @@ import { getAuthSession } from "../auth/[...nextauth]/route";
 export const GET = async (req) => {
   const { searchParams } = new URL(req.url);
 
-  console.log(searchParams)
 
   const postSlug = searchParams.get("postSlug");
 
