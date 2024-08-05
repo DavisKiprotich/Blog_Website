@@ -4,10 +4,6 @@ import Featured from "../../components/Featured";
 import Menu from "../../components/Menu";
 import styles from "../../components/styles/homepage.module.css";
 
-const articles = [
-  { title: "React Testing", author: "Linnric" },
-  { title: "React Testing with Tailwind", author: "Paul" },
-];
 
 export default function Home({ searchParams }) {
   const page = parseInt(searchParams.page) || 1;

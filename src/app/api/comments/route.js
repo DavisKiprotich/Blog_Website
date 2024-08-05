@@ -7,7 +7,6 @@ import { getAuthSession } from "../auth/[...nextauth]/route";
 export const GET = async (req) => {
   const { searchParams } = new URL(req.url);
 
-  console.log(searchParams)
 
   const postSlug = searchParams.get("postSlug");
 
@@ -20,8 +19,8 @@ export const GET = async (req) => {
     });
 
     return new NextResponse(JSON.stringify(comments, { status: 200 }));
-  } catch (err) {
-    // console.log(err);
+  } catch (error) {
+    // console.log(error);
     return new NextResponse(
       JSON.stringify({ message: "Something went wrong!" }, { status: 500 })
     );
@@ -46,8 +45,8 @@ export const POST = async (req) => {
     });
 
     return new NextResponse(JSON.stringify(comment, { status: 200 }));
-  } catch (err) {
-    console.log(err);
+  } catch (error) {
+    console.log(error);
     return new NextResponse(
       JSON.stringify({ message: "Something went wrong!" }, { status: 500 })
     );
