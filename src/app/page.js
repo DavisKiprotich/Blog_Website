@@ -9,11 +9,11 @@ export default function Home({ searchParams }) {
   const page = parseInt(searchParams.page) || 1;
   return (
     <div className={styles.container}>
-      <Head>
+     /* <Head>
         <p>
           Create Our Blog Website Using NextJs and TailwindCSS
         </p>
-      </Head>
+      </Head> */
       <Featured />
       <Categories />
       <div className={styles.content}>
