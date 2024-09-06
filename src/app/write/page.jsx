@@ -15,7 +15,7 @@ import {
 } from "firebase/storage";
 import { app } from "@/utilities/firebase";
 
-const page = () => {
+const Page = () => {
   const { status } = useSession();
   const router = useRouter();
 
@@ -97,7 +97,12 @@ const page = () => {
 
   return (
     <div className={styles.container}>
-      <input type="text" placeholder="Title" className={styles.input} onChange={e => setTitle(e.target.value)} />
+      <input 
+        type="text" 
+        placeholder="Title" 
+        className={styles.input} 
+        onChange={e => setTitle(e.target.value)} 
+      />
       <select className={styles.select} onChange={(e) => setCatSlug(e.target.value)}>
         <option value="style">style</option>
         <option value="fashion">fashion</option>
@@ -146,4 +151,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
